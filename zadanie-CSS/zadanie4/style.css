@@ -1,0 +1,48 @@
+.container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .orange {
+    background-color: orange;
+  }
+  
+  .purple {
+    background-color: purple;
+  }
+  
+  .gray {
+    background-color: gray;
+  }
+  
+  .pink {
+    background-color: pink;
+  }
