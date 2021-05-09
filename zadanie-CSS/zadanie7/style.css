@@ -1,0 +1,69 @@
+body {
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+header {
+    background-color: orangered;
+    width: 100%;
+    padding: 8px;
+}
+
+section {
+    display: flex;
+}
+
+aside {
+    width: 15%;
+    padding-bottom: 100px;
+}
+
+.left {
+    background-color: green;
+}
+
+.right {
+    background-color: pink;
+}
+
+.main-section {
+    width: 70%;
+    background-color: rgb(78, 161, 230);
+    padding-bottom: 100px;
+}
+
+footer {
+    background-color: rgb(161, 131, 209);
+    width: 100%;
+    padding: 8px;
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        order: 2;
+        width: 100%;
+    }
+
+    .right {
+        width: 20%;
+    }
+
+    .main-section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .left, .right, .main-section {
+        width: 100%;
+    }
+
+    .right {
+        order: 2;
+    }    
+}
