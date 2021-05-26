@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(192, 224, 233);
+}
+
+.section {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid rgb(21, 33, 104);
+    margin: 50px auto;
+    box-shadow: 8px 8px 5px rgb(140, 168, 184);
+}
+
+.section-element {
+    border-bottom: 1px solid rgb(140, 168, 184);
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.title {
+    text-decoration: none;
+    display: inline-block;  
+    position: relative;
+    font-size: 1.2em;
+}
+
+.title::before {
+    content: "+";
+    color: rgb(37, 75, 156);
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    left: -20px;
+    top: -2px;
+}
+
+.open .accordion-title::before {
+    content: "-";
+}
+
+.content {
+    font-size: 1.1em;
+    display: none;
+}
