@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 50px;
+    color: rgb(143, 142, 142);
+}
+
+.card-header {
+    background-color: rgb(255, 244, 244);
+    
+}
+
+.card-header .btn-link {
+    color: rgb(206, 121, 65);
+    outline: none;
+    text-decoration: none;
+}
