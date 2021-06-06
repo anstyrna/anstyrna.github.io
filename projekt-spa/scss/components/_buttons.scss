@@ -1,0 +1,32 @@
+%btn {
+    border-radius: 30px;
+    border: 0;
+    color: #ffffff;
+    padding: 20px 35px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-reserve {
+    @extend %btn;
+    border-radius: 0;
+    background-color: $primary-color;
+    padding: 20px 55px;
+    margin-right: 25px;
+    font-size: 14px;
+}
+
+.btn-watch i {
+    border-radius: 50px;
+    
+}
+
+.btn-about {
+    @extend %btn;
+    background-color: $primary-color;
+    padding: 20px 45px;
+
+    &:hover {
+        background-color: $tetriary-color;
+    }
+}
