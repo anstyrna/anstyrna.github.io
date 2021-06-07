@@ -243,6 +243,8 @@ input[type="checkbox"], input[type="radio"] {
 
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 h1, h2, h3 {
@@ -259,6 +261,7 @@ h1 {
 
 h2 {
   font-size: 42px;
+  font-weight: 700;
 }
 
 h3 {
@@ -320,7 +323,110 @@ section .section-header p {
   }
 }
 
-.btn-reserve, .btn-about {
+.infobox, .infobox-team {
+  padding: 0 10px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.infobox .infobox-inner {
+  border: 1px solid #e2e5ea;
+  padding: 25px;
+  border-radius: 2px;
+}
+
+.infobox .infobox-inner:hover {
+  -webkit-box-shadow: 0 5px 20px #f0f0f0;
+          box-shadow: 0 5px 20px #f0f0f0;
+}
+
+.infobox .infobox-inner .meta {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.infobox .infobox-inner .meta .category {
+  margin-right: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.infobox .infobox-inner .meta .post-date {
+  margin-left: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.infobox .infobox-inner img {
+  width: 100%;
+}
+
+.infobox .infobox-inner p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.infobox-team {
+  margin-top: 60px;
+  position: relative;
+}
+
+.infobox-team img {
+  width: 100%;
+}
+
+.infobox-team .infobox-team-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 80%;
+  bottom: -50px;
+  background-color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.infobox-team .infobox-team-caption:hover {
+  -webkit-box-shadow: 0 5px 20px #f0f0f0;
+          box-shadow: 0 5px 20px #f0f0f0;
+  padding-bottom: 30px;
+}
+
+.infobox-team .infobox-team-caption:hover .media-icons {
+  height: 35px;
+}
+
+.infobox-team .infobox-team-caption .media-icons {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  height: 0;
+  overflow: hidden;
+}
+
+.infobox-team .infobox-team-caption .media-icons a {
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  display: inline-block;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #473452;
+  color: #473452;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+.infobox-team .infobox-team-caption .media-icons a:hover {
+  border: 1px solid #1ba4ce;
+  color: #ffffff;
+  background-color: #1ba4ce;
+  -webkit-box-shadow: 0 5px 20px #f0f0f0;
+          box-shadow: 0 5px 20px #f0f0f0;
+}
+
+.btn-reserve, .btn-watch, .btn-about {
   border-radius: 30px;
   border: 0;
   color: #ffffff;
@@ -332,13 +438,27 @@ section .section-header p {
 .btn-reserve {
   border-radius: 0;
   background-color: #1ba4ce;
-  padding: 20px 55px;
-  margin-right: 25px;
+  padding: 16px 30px;
+  margin-right: 15px;
   font-size: 14px;
 }
 
+.btn-reserve:hover {
+  background-color: #30383b;
+}
+
+.btn-watch {
+  color: #555555;
+}
+
 .btn-watch i {
+  width: 30px;
+  height: 30px;
   border-radius: 50px;
+  border: 1px solid #473452;
+  color: #473452;
+  text-align: center;
+  margin: auto;
 }
 
 .btn-about {
@@ -461,5 +581,95 @@ section .section-header p {
     color: #473452;
     font-weight: 700;
   }
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-header .p-banner {
+  font-family: "Bellota", cursive;
+  color: #473452;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.main-header h1 {
+  color: #1e2528;
+}
+
+.main-header .banner-buttons {
+  margin-top: 25px;
+}
+
+.main-header .header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 30%;
+  display: none;
+  z-index: 100000;
+}
+
+.main-header .header-flowers {
+  max-width: 8%;
+  position: absolute;
+  left: 0;
+  top: 35%;
+  z-index: -1;
+}
+
+@media all and (min-width: 1200px) {
+  .main-header .header-bg {
+    max-width: 40%;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .main-header .banner-content {
+    width: 60%;
+  }
+  .main-header .header-bg {
+    display: block;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .main-header .banner-buttons .btn-reserve, .main-header .banner-buttons .btn-watch {
+    margin: 0;
+  }
+}
+
+.about {
+  text-align: center;
+}
+
+.about .about-header img {
+  max-width: 100px;
+}
+
+.about .about-header .about-header-description {
+  color: #473452;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+
+.about .about-content {
+  max-width: 850px;
+  font-weight: 300;
+  margin: 0 auto;
+  margin-bottom: 26px;
 }
 /*# sourceMappingURL=style.css.map */
