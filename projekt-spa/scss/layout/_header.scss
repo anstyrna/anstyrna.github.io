@@ -1,7 +1,7 @@
 .main-header {
     @include flexbox;
     @include flex-align(flex-start, center);
-    position: relative;
+    margin-top: 250px;
 
     .p-banner {
         font-family: $secondary-font;
@@ -16,6 +16,7 @@
 
     .banner-buttons {
         margin-top: 25px;
+        @include flexbox;
     }
 
     .header-bg {
@@ -47,7 +48,7 @@
             width: 60%;
         }
 
-        .header-bg {
+        .header-bg, .header-flowers {
             display: block;
         }
     }

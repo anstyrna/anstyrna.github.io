@@ -43,14 +43,14 @@
         <img src="img/header-flowers.png" alt="Photo" class="header-flowers">
         <img src="img/header-bg.png" alt="Photo" class="header-bg">
 
-        <div class="banner-container container">
-            <div class="banner-content container">
+        <div class="container">
+            <div class="banner-content ">
                 <p class="p-banner">SPA & BEAUTY CENTER</p>
                 <h1>Beauty and success starts here.</h1>
                 <P>Together creeping heaven upon third dominion be upon won't darkness rule behold it created good saw after she'd Our set living.</P>
                 <div class="banner-buttons">
                     <a href="#" class="btn-reserve">Reserve now </a>
-                    <a href="#" class="btn-watch"><i class="fas fa-play"></i>Watch our story</a>
+                    <a href="#" class="btn-watch"><i class="fas fa-play"></i><span>Watch our story</span></a>
                 </div>
             </div>
         </div>
@@ -58,8 +58,8 @@
 
     <section class="about">
         <div class="about-container container">
-            <img src="img/logo.png" alt="Photo" class="logo">
             <header class="about-header">
+                <img src="img/logo.png" alt="Photo" class="logo">
                 <p>ABOUT OUR SPA CENTER</p>
                 <h2>Come and you will be Inspired!</h2>
             </header>
@@ -71,43 +71,35 @@
     </section>
 
     <section class="feature">
-        <div class="row feature-container">
-            <div class="feature-content col-12 col-md-6 col-lg-3">
-                <a href="#" class="feature-inner">
-                    <img src="img/services-bg-1.jpg" alt="Photo">
-                    <div class="feature-hover">
-                        <img src="img/icons/icon-spa.png" alt="Logo-icon">
-                        <h3>Modern Style</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="feature-content col-12 col-md-6 col-lg-3">
-                <a href="#" class="feature-inner">
-                    <img src="img/services-bg-2.jpg" alt="Photo">
-                    <div class="feature-hover">
-                        <img src="img/icons/icon-spa.png" alt="Logo-icon">
-                        <h3>Body Treatment</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="feature-content col-12 col-md-6 col-lg-3">
-                <a href="#" class="feature-inner">
-                    <img src="img/services-bg-3.jpg" alt="Photo">
-                    <div class="feature-hover">
-                        <img src="img/icons/icon-spa.png" alt="Logo-icon">
-                        <h3>Best Places</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="feature-content col-12 col-md-6 col-lg-3">
-                <a href="#" class="feature-inner">
-                    <img src="img/services-bg-4.jpg" alt="Photo">
-                    <div class="feature-hover">
-                        <img src="img/icons/icon-spa.png" alt="Logo-icon">
-                        <h3>Expert Staff</h3>
-                    </div>
-                </a>
-            </div>
+        <div class="row feature-container no-gutters">
+            <a href="#" class="feature-content col-12 col-md-6 col-lg-3">
+                <img src="img/services-bg-1.jpg" alt="Photo">
+                <div class="feature-hover">
+                    <img src="img/icons/icon-spa.png" alt="Logo-icon">
+                    <h3>Modern Style</h3>
+                </div>
+            </a>
+            <a href="#" class="feature-content col-12 col-md-6 col-lg-3">
+                <img src="img/services-bg-2.jpg" alt="Photo">
+                <div class="feature-hover">
+                    <img src="img/icons/icon-spa.png" alt="Logo-icon">
+                    <h3>Body Treatment</h3>
+                </div>
+            </a>
+            <a href="#" class="feature-content col-12 col-md-6 col-lg-3">
+                <img src="img/services-bg-3.jpg" alt="Photo">
+                <div class="feature-hover">
+                    <img src="img/icons/icon-spa.png" alt="Logo-icon">
+                    <h3>Best Places</h3>
+                </div>
+            </a>
+            <a href="#" class="feature-content col-12 col-md-6 col-lg-3">
+                <img src="img/services-bg-4.jpg" alt="Photo">
+                <div class="feature-hover">
+                    <img src="img/icons/icon-spa.png" alt="Logo-icon">
+                    <h3>Expert Staff</h3>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -167,7 +159,7 @@
                 </div>
                 <div class="infobox-team col-12 col-md-4">
                     <img src="img/team-3.jpg" alt="Photo">
-                    <div class="infobox-team-caption"></div>
+                    <div class="infobox-team-caption">
                         <h3>David Hannan</h3>
                         <p>Thai Massage</p>
                         <div class="media-icons">
@@ -200,14 +192,15 @@
             <input type="email" name="email" placeholder="Email Address" id="form-email" class="appointment-form-content">
             <input type="tel" name="phone" placeholder="Phone Number" id="form-phone" class="appointment-form-content">
             <select name="select" id="form-select" class="appointment-form-content">
-                <option value="select">Select Service</option>
+                <option value="">Select Service</option>
                 <option value="normal">Normal Service</option>
                 <option value="vip">VIP Service</option>
             </select>
             <input type="date" name="date" placeholder="Date" id="form-date" class="appointment-form-content">
             <input type="time" name="time" placeholder="Time" id="form-time" class="appointment-form-content">
             <textarea name="message" placeholder="Your Notes" id="appointment-message" class="appointment-form-content"></textarea>
-            <button type="button" class="btn-form">Make an Appointment</button>
+            <button type="submit" class="btn-form">Make an Appointment</button>
+            <p class="appointment-message"></p>
         </form>
     </section>
 
@@ -259,7 +252,7 @@
                 <p>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</p>
             </header>
             <div class="row contact-content">
-                <div class="contact-info col-12 col-md-33p">
+                <div class="contact-info col-12 col-md-4">
                     <div class="contact-item">
                         <span class="contact-icon">
                             <img src="img/icons/icon-map.png" alt="icon">
@@ -285,7 +278,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="contact-form col-12 col-md-66p">
+                <div class="contact-form col-12 col-md-8">
                     <form>
                         <input type="text" placeholder="First Name" name="name">
                         <input type="email" placeholder="Email Address" name="email">
@@ -301,11 +294,11 @@
         <img src="img/logo-txt.png" alt="Logo">
         <nav class="footer-nav">
             <ul class="footer-menu">
-                <li class="footer-menu-item"><a href="#">HOME</a></li>
-                <li class="footer-menu-item"><a href="#">ABOUT</a></li>
-                <li class="footer-menu-item"><a href="#">FEATURE</a></li>
-                <li class="footer-menu-item"><a href="#">SERVICE</a></li>
-                <li class="footer-menu-item"><a href="#">CONTACT</a></li>
+                <li class="menu-item"><a href="#">HOME</a></li>
+                <li class="menu-item"><a href="#">ABOUT</a></li>
+                <li class="menu-item"><a href="#">FEATURE</a></li>
+                <li class="menu-item"><a href="#">SERVICE</a></li>
+                <li class="menu-item"><a href="#">CONTACT</a></li>
             </ul>
         </nav>
         <p class="copyright">© COPYRIGHT 2021</p>

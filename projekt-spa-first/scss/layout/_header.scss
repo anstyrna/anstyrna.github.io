@@ -1,0 +1,69 @@
+.main-header {
+    @include flexbox;
+    @include flex-align(flex-start, center);
+    margin-top: 215px;
+    padding: 0;
+    margin-left: -480px;
+
+    .p-banner {
+        font-family: $secondary-font;
+        color: $secondary-color;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    h1 {
+        color: #1e2528;
+    }
+
+    .banner-buttons {
+        margin-top: 25px;
+    }
+
+    .header-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 30%;
+        display: none;
+        z-index: 100000;
+    }
+
+    .header-flowers {
+        max-width: 8%;
+        position: absolute;
+        left: 0;
+        top: 35%;
+        z-index: -1;
+    }
+
+    @media all and (min-width: $extra-large) {
+        .header-bg {
+            max-width: 40%;
+        }
+    }
+
+    @media all and (min-width: $large) {
+
+        .banner-content {
+            width: 60%;
+        }
+
+        .header-bg {
+            display: block;
+        }
+
+        .header-flowers {
+            display: block;
+        }
+    }
+
+    @media all and (max-width: $extra-small) {
+        .banner-buttons {
+            .btn-reserve, .btn-watch {
+                margin: 0;
+            }
+        }
+    }
+}
+
